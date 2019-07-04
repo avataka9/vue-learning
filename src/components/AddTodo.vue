@@ -29,12 +29,14 @@
   }
 </script>
 
-<style>
+<style scoped>
   form {
     display: flex;
+    justify-content: center;
   }
 
   input {
+    border-radius: 5px;
     width: 400px;
   }
 </style>

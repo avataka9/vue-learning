@@ -6,7 +6,7 @@
              v-bind:checked="todo.complited"
              title="checkbox">
       <strong>{{index + 1}}</strong>
-      {{ todo.title }}
+      {{todo.title | uppercase}}
     </span>
     <button class="rm" v-on:click="$emit('remove-todo', todo.id)">&times;</button>
   </li>
@@ -19,7 +19,12 @@ export default {
       type: Object,
       required: true,
     },
-    index: Number
+    index: Number,
+  },
+  filters: {
+    uppercase(value) {
+      return value.toUpperCase()
+    }
   }
 }
 </script>
