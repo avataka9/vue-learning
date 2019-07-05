@@ -61,9 +61,9 @@
         if (this.filter === 'all') {
           return this.todos
         } else if (this.filter === 'completed') {
-          return this.todos.filter(todo => todo.complited)
+          return this.todos.filter(todo => todo.completed)
         } else if (this.filter === 'not-completed') {
-          return this.todos.filter(todo => !todo.complited)
+          return this.todos.filter(todo => !todo.completed)
         }
       }
     },

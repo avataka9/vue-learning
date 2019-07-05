@@ -1,9 +1,9 @@
 <template>
   <li>
-    <span v-bind:class="{done: todo.complited}">
+    <span v-bind:class="{done: todo.completed}">
       <input type="checkbox"
-             v-on:change="todo.complited=!todo.complited"
-             v-bind:checked="todo.complited"
+             v-on:change="todo.completed=!todo.completed"
+             v-bind:checked="todo.completed"
              title="checkbox">
       <strong>{{index + 1}}</strong>
       {{todo.title | uppercase}}
